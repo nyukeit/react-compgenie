@@ -2,7 +2,7 @@
   "name": "react-compgenie",
   "displayName": "React Component Genie",
   "description": "Generate React/React Native components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPL-3.0-only",
   "publisher": "nyukeit",
   "repository": {
@@ -32,17 +32,17 @@
       "type": "object",
       "properties": {
         "reactComponentCreator.defaultExtension": {
-            "type": "string",
-            "default": ".tsx",
-            "description": "Default file extension for new React components (e.g., .tsx or .jsx)",
-            "enum": [
-              ".tsx",
-              ".jsx"
-            ],
-            "enumDescriptions": [
-              "TypeScript JSX",
-              "JavaScript JSX"
-            ]
+          "type": "string",
+          "default": ".tsx",
+          "description": "Default file extension for new React components (e.g., .tsx or .jsx)",
+          "enum": [
+            ".tsx",
+            ".jsx"
+          ],
+          "enumDescriptions": [
+            "TypeScript JSX",
+            "JavaScript JSX"
+          ]
         }
       }
     }
