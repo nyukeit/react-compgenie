@@ -10,13 +10,22 @@ React Component Genie creates React or React Native components by simply specify
 4. Detects if the project is React or React Native (base or Expo) to create suitable component code.
 5. Automatically detects the presence of 'frontend' folder, to create components inside this folder if it exists.
 
-## Requirements
+## How To Use
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Bring up the command palette by pressing `ctrl + shift + p`. 
+2. Search for 'Create React Component'. 
+3. Start typing the name of your component that you wish to create.
+    Eg. `MyComponent`
+4. If you wish to create a component in a specific folder, type the entire path.
+    Eg. `src/components/MyComponent`
 
 ## Extension Settings
 
-* `createReactComponent.defaultExtension`: Set default file extension to 'tsx' or 'jsx'.
+To change the default extension of your components, open VS Code Settings and search for 'React Component Genie'.
+
+You can choose between the extensions '.tsx' and '.jsx'.
+
+* `reactComponentGenie.defaultExtension`: Set default file extension to 'tsx' or 'jsx'.
 
 ## Known Issues
 
