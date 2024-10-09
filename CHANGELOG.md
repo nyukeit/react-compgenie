@@ -1,0 +1,21 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.0.0] - 2024-10-09
+
+### Added
+
+- Ability to create a React component in a suitable directory
+- Ability to create a React Native component in a suitable directory
+- Detect the presence of a 'frontend' folder to create a component inside frontend
+- Detect the type of project to apply suitable boilerplate code, eg. React, React Native or React Native with Expo
+- Automatically append selected file extension to components, either 'tsx' or 'jsx'.
+- Ability to change the default file extension from settings.
+
+

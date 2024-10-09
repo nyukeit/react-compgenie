@@ -1,0 +1,77 @@
+{
+  "name": "react-compgenie",
+  "displayName": "React Component Genie",
+  "description": "Generate React/React Native components",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "publisher": "nyukeit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nyukeit/react-component-gen.git"
+  },
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createReactComponent",
+        "title": "Create React Component"
+      },
+      {
+        "command": "extension.createReactNativeComponent",
+        "title": "Create React Native Component"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "reactComponentCreator.defaultExtension": {
+            "type": "string",
+            "default": ".tsx",
+            "description": "Default file extension for new React components (e.g., .tsx or .jsx)",
+            "enum": [
+              ".tsx",
+              ".jsx"
+            ],
+            "enumDescriptions": [
+              "TypeScript JSX",
+              "JavaScript JSX"
+            ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "esbuild": "^0.24.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
