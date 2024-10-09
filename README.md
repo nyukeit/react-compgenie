@@ -1,6 +1,6 @@
-# react-component-gen README
+# React Component Genie
 
-This extension generates a React / React-Native component (including the file) based on the name input by the user.
+React Component Genie creates React or React Native components by simply specifying a file name. It auto-detects the type of project and inserts the correct boilerplate code. Currently supports React, React Native basic and React Native Expo.
 
 ## Features
 
