@@ -35,3 +35,7 @@ First release.
 
 ### 1.0.0
 Initial Release
+
+## Credits
+Logo Credit
+<a href="https://www.vecteezy.com/free-vector/react-logo">React Logo Vectors by Vecteezy</a>
