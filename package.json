@@ -7,7 +7,7 @@
   "publisher": "nyukeit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nyukeit/react-component-gen.git"
+    "url": "https://github.com/nyukeit/react-compgenie.git"
   },
   "engines": {
     "vscode": "^1.94.0"

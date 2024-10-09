@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+(coming soon)
+
 ## [1.0.0] - 2024-10-09
 
 ### Added
@@ -18,4 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatically append selected file extension to components, either 'tsx' or 'jsx'.
 - Ability to change the default file extension from settings.
 
+## [1.0.1] - 2024-10-09
 
+### Changed
+
+- Fixed incorrect link to the GitHub repo
+- Modified Readme for preciseness and clarity
