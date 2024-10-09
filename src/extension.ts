@@ -27,7 +27,8 @@ export function activate(context: vscode.ExtensionContext) {
 
         // Read the default extension from the configuration
         const config = vscode.workspace.getConfiguration();
-        const defaultExtension = config.get<string>('reactComponentCreator.defaultExtension') || '.tsx';
+        const defaultExtension = config.get<string>('reactComponentGenie.defaultExtension') || '.tsx';
+        console.log(defaultExtension);
 
         // Ask the user for the folder path and component name
         const componentPath = await vscode.window.showInputBox({
