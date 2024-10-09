@@ -2,8 +2,9 @@
   "name": "react-compgenie",
   "displayName": "React Component Genie",
   "description": "Generate React/React Native components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "GPL-3.0-only",
+  "icon": "images/logo.png",
   "publisher": "nyukeit",
   "repository": {
     "type": "git",
